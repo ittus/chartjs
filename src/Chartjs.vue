@@ -60,7 +60,8 @@ export default {
     type () {
       this.$nextTick(() => this.resetChart())
     },
-    data () {
+    data (newData) {
+      this.chart.data = newData
       this.chart.update()
     },
     options () {
